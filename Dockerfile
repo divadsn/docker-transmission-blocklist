@@ -13,4 +13,4 @@ ADD crontab /etc/crontabs/www-data
 ADD update-lists.sh /usr/local/bin/update-lists.sh
 RUN chmod +x /usr/local/bin/update-lists.sh
 
-ENTRYPOINT ["crond"]
+ENTRYPOINT ["crond", "-f"]
