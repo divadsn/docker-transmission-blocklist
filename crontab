@@ -1,0 +1,2 @@
+# min   hour    day     month   weekday command
+*       *       *       *       *       /usr/local/bin/update-lists.sh > /dev/null 2>&1
