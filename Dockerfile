@@ -6,11 +6,11 @@ RUN set -x && \
     deluser xfs && \
     addgroup -g 33 -S www-data && \
     adduser -S -D -u 33 -h /var/www -s /sbin/nologin -G www-data -g www-data www-data && \
-    su www-data -s /bin/sh -c "mkdir -p /var/www/shared" && \
+    ln -sf /dev/stdout /var/log/cron.log && \
     apk add --no-cache curl ca-certificates
 
 ADD crontab /etc/crontabs/www-data
 ADD update-lists.sh /usr/local/bin/update-lists.sh
 RUN chmod +x /usr/local/bin/update-lists.sh
 
-ENTRYPOINT ["crond", "-f"]
+ENTRYPOINT ["crond", "-L", "/var/log/cron.log", "-f"]
