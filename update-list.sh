@@ -1,4 +1,5 @@
 #!/bin/sh
+# Based on https://gist.github.com/johntyree/3331662
 
 USER_AGENT="Mozilla/5.0 (X11; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0"
 
