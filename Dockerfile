@@ -14,7 +14,7 @@ RUN set -x && \
     adduser -S -D -u $UID -h $OUTPUT_DIR -s /sbin/nologin -G $USER -g $USER $USER && \
     chmod +x /usr/local/bin/update-list.sh && \
     ln -sf /dev/stdout /var/log/cron.log && \
-    apk add --no-cache curl
+    apk add --no-cache curl tzdata
 
 ADD crontab /etc/crontabs/$USER
 ENTRYPOINT ["crond", "-L", "/var/log/cron.log", "-f"]
