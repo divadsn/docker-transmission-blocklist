@@ -6,13 +6,13 @@ ARG UID=82
 ARG GID=82
 
 ENV OUTPUT_DIR=/data
-ADD update-lists.sh /usr/local/bin/update-lists.sh
+ADD update-list.sh /usr/local/bin/update-list.sh
 
 # Add www-data user and install dependencies
 RUN set -x && \
     addgroup -g $GID -S $USER && \
     adduser -S -D -u $UID -h $OUTPUT_DIR -s /sbin/nologin -G $USER -g $USER $USER && \
-    chmod +x /usr/local/bin/update-lists.sh && \
+    chmod +x /usr/local/bin/update-list.sh && \
     ln -sf /dev/stdout /var/log/cron.log && \
     apk add --no-cache curl
 
