@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import ipcalc
 import logging
@@ -175,7 +176,7 @@ def main():
     logger.info("Creating sources.txt with list refrences and authors")
 
     try:
-        create_sources_file()
+        create_sources_file(OUTPUT_DIR)
     except IOError as e:
         logger.error("Failed to create file: " + str(e))
 
