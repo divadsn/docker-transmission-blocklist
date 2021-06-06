@@ -1,5 +1,5 @@
 # docker-transmission-blocklist
-Regularly updated blocklist with lists from iblocklist.com
+Regularly updated blocklist with lists from [copyright free sources](https://mirror.codebucket.de/transmission/sources.txt)
 
 Use https://mirror.codebucket.de/transmission/blocklist.p2p.gz in Transmission as blocklist url.
 
