@@ -30,7 +30,7 @@ lists = {
         "malc0de": "https://malc0de.com/bl/IP_Blacklist.txt",
         "nixspam": "https://iplists.firehol.org/files/nixspam.ipset",
         "sslbl": "https://sslbl.abuse.ch/blacklist/sslipblacklist.txt",
-        "yoyo_adservers": "http://pgl.yoyo.org/adservers/iplist.php?ipformat=plain&showintro=0&mimetype=plaintext",
+        "yoyo_adservers": "https://pgl.yoyo.org/adservers/iplist.php?ipformat=plain&showintro=0&mimetype=plaintext",
     },
     "other": {
         "dm_tor": "https://www.dan.me.uk/torlist/",
