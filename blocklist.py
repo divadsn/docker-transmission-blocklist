@@ -14,7 +14,7 @@ logger = logging.getLogger("blocklist")
 
 lists = {
     "net": {
-        "fullbogons": "https://www.team-cymru.org/Services/Bogons/fullbogons-ipv4.txt",
+        "cidr_report_bogons": "https://www.cidr-report.org/bogons/freespace-prefix.txt",
         "spamhaus_drop": "https://www.spamhaus.org/drop/drop.txt",
         "spamhaus_edrop": "https://www.spamhaus.org/drop/edrop.txt",
     },
