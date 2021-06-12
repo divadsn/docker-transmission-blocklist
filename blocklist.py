@@ -22,7 +22,7 @@ lists = {
         "alienvault_reputation": "https://reputation.alienvault.com/reputation.generic",
         "bds_atif": "https://www.binarydefense.com/banlist.txt",
         "blocklist_de": "https://lists.blocklist.de/lists/all.txt",
-        "bruteforceblocker": "http://danger.rulez.sk/projects/bruteforceblocker/blist.php",
+        "bruteforceblocker": "https://iplists.firehol.org/files/bruteforceblocker.ipset",
         "ciarmy": "https://cinsscore.com/list/ci-badguys.txt",
         "cruzit_web_attacks": "https://iplists.firehol.org/files/cruzit_web_attacks.ipset",
         "et_compromised": "https://rules.emergingthreats.net/blockrules/compromised-ips.txt",
