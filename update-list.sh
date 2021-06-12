@@ -1,3 +1,3 @@
 #!/bin/sh
 
-blocklist.py && gzip "${OUTPUT_DIR}/blocklist.p2p"
+blocklist.py && gzip -f "${OUTPUT_DIR}/blocklist.p2p"
