@@ -14,7 +14,7 @@ logger = logging.getLogger("blocklist")
 
 lists = {
     "net": {
-        "cidr_report_bogons": "https://www.cidr-report.org/bogons/freespace-prefix.txt",
+        "darklist_de": "https://www.darklist.de/raw.php",
         "spamhaus_drop": "https://www.spamhaus.org/drop/drop.txt",
         "spamhaus_edrop": "https://www.spamhaus.org/drop/edrop.txt",
     },
