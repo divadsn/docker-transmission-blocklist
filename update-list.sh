@@ -1,3 +1,4 @@
 #!/bin/sh
 
-blocklist.py && gzip -f "${OUTPUT_DIR}/blocklist.p2p"
+blocklist.py > /dev/stdout
+gzip -fk "${OUTPUT_DIR}/blocklist.p2p"
